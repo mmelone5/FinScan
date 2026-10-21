@@ -1,4 +1,3 @@
-import donkey_kong
 print ("Hello Mr. Squires")
 try:
     import donkey_kong
