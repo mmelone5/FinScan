@@ -1,4 +1,4 @@
-print ("Hello Mr. Squires")
+print ("Hello Donkey Kong")
 try:
     import donkey_kong
 except ModuleNotFoundError:
