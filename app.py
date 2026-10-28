@@ -1,7 +1,18 @@
-print ("Hello Donkey Kong")
-try:
-    import donkey_kong
-except ModuleNotFoundError:
-    print("Donkey Kong imported successfully")
-    pass
-  #donkey kong implemented
+from flask import Flask, render_template
+
+app = Flask(__name__)
+# define pages
+@app.route("/")
+def login():
+    return render_template("login.html")
+
+@app.route("/main")
+def main():
+    return render_template("main.html")
+
+@app.route("/log")
+def fish_log():
+    return render_template("log.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
